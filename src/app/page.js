@@ -4,6 +4,7 @@ import Projects from '@/components/Projects';
 import Services from '@/components/Services';
 import Skills from '@/components/Skills';
 import About from '@/components/About';
+
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -13,10 +14,10 @@ export default function Home() {
       <Navbar />
       <main className="pt-20">
         <Hero />
-        <Projects />
-        <Services />
-        <Skills />
         <About />
+        <Projects />
+        <Skills />
+        <Services />
         <Contact />
       </main>
       <Footer />

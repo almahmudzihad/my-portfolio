@@ -31,12 +31,12 @@ export default function Contact() {
         </div>
         <div className="contact-content grid lg:grid-cols-2 gap-20">
           <div>
-            <p className="text-gray-400 mb-12 max-w-md leading-relaxed">
+            <p className="text-foreground/60 mb-12 max-w-md leading-relaxed">
               I’m interested in freelance opportunities. However, if you have other requests or questions, don’t hesitate to contact me.
             </p>
-            <div className="glass-card p-8 rounded-2xl inline-block border-brand-dark">
+            <div className="glass-card p-8 rounded-2xl inline-block border-foreground/10">
               <h5 className="font-bold mb-4">Message me here</h5>
-              <div className="space-y-4 text-gray-400">
+              <div className="space-y-4 text-foreground/60">
                 <div className="flex items-center gap-3">
                   <span className="text-brand-blue">Discord:</span>
                   <span>!Elias#3519</span>
@@ -51,23 +51,23 @@ export default function Contact() {
           <form className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <input 
-                className="w-full bg-brand-card border border-brand-dark rounded-lg px-4 py-3 outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue/50 transition-all" 
+                className="w-full bg-brand-card border border-foreground/10 rounded-lg px-4 py-3 outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue/50 transition-all" 
                 placeholder="Name" 
                 type="text" 
               />
               <input 
-                className="w-full bg-brand-card border border-brand-dark rounded-lg px-4 py-3 outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue/50 transition-all" 
+                className="w-full bg-brand-card border border-foreground/10 rounded-lg px-4 py-3 outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue/50 transition-all" 
                 placeholder="Email" 
                 type="email" 
               />
             </div>
             <input 
-              className="w-full bg-brand-card border border-brand-dark rounded-lg px-4 py-3 outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue/50 transition-all" 
+              className="w-full bg-brand-card border border-foreground/10 rounded-lg px-4 py-3 outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue/50 transition-all" 
               placeholder="Title" 
               type="text" 
             />
             <textarea 
-              className="w-full bg-brand-card border border-brand-dark rounded-lg px-4 py-3 outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue/50 transition-all min-h-[150px]" 
+              className="w-full bg-brand-card border border-foreground/10 rounded-lg px-4 py-3 outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue/50 transition-all min-h-[150px]" 
               placeholder="Message"
             ></textarea>
             <button className="bg-brand-blue hover:bg-blue-600 px-10 py-4 rounded-lg font-bold transition-all shadow-lg shadow-blue-500/20">

@@ -60,7 +60,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Services</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-foreground/60 max-w-2xl mx-auto">
             From interfaces to full-stack, I build modern products that are scalable and user-friendly.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function Services() {
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
+              <p className="text-foreground/50 text-sm leading-relaxed">{service.description}</p>
             </motion.div>
           ))}
         </div>

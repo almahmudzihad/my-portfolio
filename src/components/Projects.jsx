@@ -10,28 +10,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: "Integrate AI Into The E-Commerce",
-    category: "SaaS Landing Page",
-    description: "Landing Pages are designed for efficient and fast setup sales platform",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAdTpXAGKH5nboHLy-NsQvYVd8WROwgft3fuPBzCnCyW6_veuZngGYapBdJBKMue57dqUqFH0dJOnW9VDCKvnPFMx1kYZ-2RUPks17N0kZEydKmCBhHgvKfF6FSPV5gMsAq4RVGAZsZbGt1ZyAv-uI66YmKpTk95wNv_z_Q7AwOAVormDUzYdhNqRPUVGbpysfqdzizuc1hefTkT_aWSx4AaWkC1Iij0XFMulm2-AztxGtT8Fx4novOUOW9RNl_8YS2yh4d3LkODerF"
+    title: "Qurbani Hat",
+    category: "Next.js / E-commerce",
+    description: "A specialized online marketplace for cows and goats, simplifying the Qurbani animal purchase experience with modern tech.",
+    image: "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?q=80&w=2070&auto=format&fit=crop",
+    live: "https://qurbanihat-nextjs.vercel.app/animal",
+    github: "https://github.com/almahmudzihad/qurbanihat-nextjs"
   },
   {
-    title: "Integrate AI Into The E-Commerce",
-    category: "SaaS Landing Page",
-    description: "Landing Pages are designed for efficient and fast setup sales platform",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAlagIzRIVX-JHGz23m0V7PuDG9Ia9cqwM1NYlgAXG6mRdtw86uisFGqo3AtPooxtMj2LHgO3qVM3TEilSM7iqo1qcI2ldk68WitH46z1FnF-p26ukgnm1hyDliOBa2_Z7hyCz9d01BBvNIi6MY0WaJsZ1F8cirhijR37zHrtHu3ZVJ_wXUbo7HUUBnDx_FPYH3-rd2_I2LmOy6OY3AWX66l7EvODOCP-5hPybdu0PTT4xATdDtuRdm1_8ivGsnxIYLOjUYOsQOSayw"
+    title: "Keen Keeper",
+    category: "Web Application",
+    description: "A task management and organization tool designed for productivity and seamless user experience.",
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
+    live: "https://keen-keeper-zihad.netlify.app/",
+    github: "https://github.com/almahmudzihad/keen-keeper"
   },
   {
-    title: "Integrate AI Into The E-Commerce",
-    category: "SaaS Landing Page",
-    description: "Landing Pages are designed for efficient and fast setup sales platform",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBnydHd8C8XpZ4mPCUsDv3ivreaIhHGojmF9H8tEcUOAniBMXwp7AqzF3rGe3Z7ZfCtEIvxs6qxUi1hwOMaLsYGDpd-B2PfMXnTp7z8ywUFdezn2wXaI0T3wmliZH7XXEAw_IGEKZlkvdqEuYQZu_T9ZvG0WNcgczRZ-CF7i2WRrqcPvoVtxflLRnTQlbvXDmyuZI9m2EXh-uJaiDtCQdmGg44zAtGHoATWiHSTCNMI1N5i9EAzrhzkwsiVz6hh3ugWNMV-NHC--k-J"
+    title: "PixGen",
+    category: "AI Image Generation",
+    description: "An AI-powered image generation tool with a sleek user interface and advanced generation capabilities.",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
+    live: "https://pixgen-teal.vercel.app/",
+    github: "https://github.com/almahmudzihad/pixgen"
   },
   {
-    title: "Integrate AI Into The E-Commerce",
-    category: "SaaS Landing Page",
-    description: "Landing Pages are designed for efficient and fast setup sales platform",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPgL51biGfxAGfoQH1iTdutaSW1BHtW390UohzcWEFLReQ-ilDA5ZsszM46N0WhIxqjnQ4HRubfSgNGF6EJev6qiRC_02HkSluDU-BOhdeiSO7e_umjiJxkx31NmneM2FuO094tOEWovepdZ6U3jkNfxGueuHmIr42qg5kiKvxT-vNtsbmaBLBYvuH4coRCfRcIsjoCDJjZ9p8q5F6Dm3w2OmzVgCq2kIcByrJFxvhwcbEGvYVFHd6Pjipu892wB2gBw4uoXaI70Kz"
+    title: "Dragon News",
+    category: "Next.js / News Portal",
+    description: "A dynamic news portal built with Next.js, featuring real-time updates and a clean, responsive layout.",
+    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=2070&auto=format&fit=crop",
+    live: "https://dragon-news-nextjs-blond.vercel.app/",
+    github: "https://github.com/almahmudzihad/dragon-news-nextjs"
   }
 ];
 
@@ -63,7 +71,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Recent Projects</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-foreground/60 max-w-2xl mx-auto">
             A curated mix of projects—scalable, fast, and future-ready—blending design, code, and creativity.
           </p>
         </div>
@@ -72,7 +80,7 @@ export default function Projects() {
             <motion.div 
               key={index} 
               whileHover={{ y: -10 }}
-              className="project-card glass-card rounded-3xl overflow-hidden group p-4 cursor-pointer"
+              className="project-card glass-card rounded-3xl overflow-hidden group p-4 flex flex-col h-full"
             >
               <div className="aspect-video rounded-2xl overflow-hidden mb-6 bg-brand-dark">
                 <motion.img 
@@ -83,12 +91,31 @@ export default function Projects() {
                   src={project.image}
                 />
               </div>
-              <div className="px-2 pb-2">
-                <span className="inline-block px-3 py-1 rounded-full bg-brand-card border border-brand-dark text-[10px] font-bold uppercase tracking-wider text-gray-400 mb-3">
+              <div className="px-2 pb-2 flex-grow">
+                <span className="inline-block px-3 py-1 rounded-full bg-brand-card border border-foreground/10 text-[10px] font-bold uppercase tracking-wider text-foreground/60 mb-3">
                   {project.category}
                 </span>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{project.description}</p>
+                <p className="text-sm text-foreground/50 leading-relaxed mb-6">{project.description}</p>
+              </div>
+              
+              <div className="px-2 pb-2 flex gap-4">
+                <a 
+                  href={project.live} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-grow text-center py-2.5 rounded-xl bg-brand-blue text-white text-xs font-bold hover:bg-blue-600 transition-colors"
+                >
+                  Live Demo
+                </a>
+                <a 
+                  href={project.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-4 py-2.5 rounded-xl border border-foreground/10 text-foreground/60 hover:text-foreground hover:bg-foreground/5 transition-all"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                </a>
               </div>
             </motion.div>
           ))}

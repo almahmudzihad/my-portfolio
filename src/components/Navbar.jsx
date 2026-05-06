@@ -53,7 +53,7 @@ export default function Navbar() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-background/80 backdrop-blur-lg border-b border-white/5 py-4' : 'bg-transparent py-6'
+      scrolled ? 'bg-background/80 backdrop-blur-lg border-b border-foreground/5 py-4' : 'bg-transparent py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tight"><span className="text-brand-blue font-extrabold">Z</span>ihad</Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
             return (
               <Link 
                 key={link.name} 
-                className={`relative px-2 py-1 transition-colors ${isActive ? 'text-white' : 'text-gray-400 hover:text-white'}`} 
+                className={`relative px-2 py-1 transition-colors ${isActive ? 'text-foreground' : 'text-foreground/80 hover:text-foreground'}`} 
                 href={link.href}
               >
                 {link.name}
@@ -92,7 +92,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-400 hover:text-white p-2"
+            className="md:hidden text-foreground/80 hover:text-foreground p-2"
             onClick={() => setIsOpen(!isOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,13 +113,13 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background border-b border-white/5 px-6 py-8 space-y-6 overflow-hidden"
+            className="md:hidden bg-background border-b border-foreground/5 px-6 py-8 space-y-6 overflow-hidden"
           >
             <nav className="flex flex-col space-y-6">
               {navLinks.map((link) => (
                 <Link 
                   key={link.name} 
-                  className="text-lg font-medium text-gray-400 hover:text-white transition-colors" 
+                  className="text-lg font-medium text-foreground/80 hover:text-foreground transition-colors" 
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                 >
