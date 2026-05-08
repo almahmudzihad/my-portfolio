@@ -11,8 +11,10 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('');
 
   const navLinks = [
+    { name: 'HOME', href: '#home' },
     { name: 'ABOUT', href: '#about' },
     { name: 'PROJECTS', href: '#projects' },
+    { name: 'SKILLS', href: '#skills' },
     { name: 'SERVICES', href: '#services' },
     { name: 'CONTACT', href: '#contact' },
   ];
@@ -39,7 +41,7 @@ export default function Navbar() {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
     
     // Observe all sections
-    ['projects', 'services', 'about', 'contact'].forEach(id => {
+    ['home', 'projects', 'services', 'about', 'contact', 'skills'].forEach(id => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
     });
@@ -55,7 +57,7 @@ export default function Navbar() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled ? 'bg-background/80 backdrop-blur-lg border-b border-foreground/5 py-4' : 'bg-transparent py-6'
     }`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div id="home" className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tight"><span className="text-brand-blue font-extrabold">Z</span>ihad</Link>
         
         {/* Desktop Navigation */}

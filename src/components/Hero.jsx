@@ -50,7 +50,7 @@ export default function Hero() {
   
 
   return (
-    <section ref={container} className="relative min-h-[80vh] flex items-center overflow-hidden py-20 px-6 bg-background">
+    <section ref={container} className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
       <div className="absolute inset-0 hero-glow pointer-events-none parallax-bg"></div>
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <div>
