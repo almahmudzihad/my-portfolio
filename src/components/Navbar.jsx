@@ -11,7 +11,7 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('');
 
   const navLinks = [
-    { name: 'HOME', href: '#home' },
+    { name: 'HOME', href: '/' },
     { name: 'ABOUT', href: '#about' },
     { name: 'PROJECTS', href: '#projects' },
     { name: 'SKILLS', href: '#skills' },

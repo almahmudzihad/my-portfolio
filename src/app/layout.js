@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Leo Carter | Portfolio & Digital Experiences",
-  description: "From prototypes to production-ready systems, I turn ideas into scalable, user-focused products.",
+  title: "Zihad | Portfolio & Digital Experiences",
+  description: "I'm a web developer from Dhaka, Bangladesh. I build websites and web applications.",
 };
 
 export default function RootLayout({ children }) {

@@ -63,7 +63,10 @@ export default function Hero() {
           </p>
           <div className="hero-text flex flex-wrap gap-4">
             <button className="bg-brand-blue hover:bg-blue-600 px-8 py-4 rounded-lg font-semibold transition-all">Let's Connect</button>
-            <button className="bg-foreground/5 hover:bg-foreground/10 border border-foreground/10 px-8 py-4 rounded-lg font-semibold transition-all text-foreground">View Projects</button>
+            <button className="bg-foreground/5 hover:bg-foreground/10 border border-foreground/10 px-8 py-4 rounded-lg font-semibold transition-all text-foreground">
+            Download Resume
+                  
+            </button>
           </div>
         </div>
         <div className="relative flex justify-center items-center">
